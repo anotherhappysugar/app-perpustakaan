@@ -1,4 +1,3 @@
-{{-- File: resources/views/books/show.blade.php --}}
 <!DOCTYPE html>
 <html lang="id">
 <head>
