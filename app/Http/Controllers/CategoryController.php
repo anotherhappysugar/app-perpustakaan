@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreCategoryRequest;
 use Illuminate\Http\Request;
-
+use App\Models\Category;
 class CategoryController extends Controller
 {
-   use App\Models\Category;
+
 
 public function index()
 {
@@ -15,6 +15,11 @@ public function index()
 
     return view('categories.index', compact('categories'));
 }
+
+public function create()
+    {
+        return view('categories.create');
+    }
 
 public function store(StoreCategoryRequest $request)
 {

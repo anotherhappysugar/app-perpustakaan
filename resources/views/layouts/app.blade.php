@@ -18,6 +18,19 @@
         .btn { display: inline-block; padding: 6px 14px; background: #2563eb; color: #fff; text-decoration: none; border-radius: 4px; border: none; cursor: pointer; }
         form.inline { display: inline; }
         footer { text-align: center; padding: 20px; color: #6b7280; font-size: 14px; border-top: 1px solid #e5e7eb; margin-top: 40px; }
+        /* PERBAIKAN PAGINATION: Membatasi ukuran ikon SVG panah */
+        nav[role="navigation"] svg {
+            width: 16px !important;
+            height: 16px !important;
+            vertical-align: middle;
+        }
+        nav[role="navigation"] div:first-child {
+            margin-bottom: 12px;
+        }
+        nav[role="navigation"] span, nav[role="navigation"] a {
+            padding: 4px 8px;
+            text-decoration: none;
+        }
     </style>
 </head>
 <body>
